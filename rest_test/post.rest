@@ -1,0 +1,35 @@
+GET http://localhost:3000/post
+
+###
+
+GET http://localhost:3000/post/6429474acf8d2af34fac1ff4
+
+###
+
+GET http://localhost:3000/post/6429474acf8d2af34fac1ff4/replies
+
+
+###
+
+POST http://localhost:3000/post/create
+Content-Type: application/json
+
+{
+    "content": "Reply to the Amazing Person 2",
+    "userId": "6429311f95b9c156e1e2d8df",
+    "targetPost": "6429474acf8d2af34fac1ff4"
+}
+
+###
+
+DELETE http://localhost:3000/post/642946c5f79a0c6aeda7a0bf
+
+###
+
+PATCH http://localhost:3000/post/6429429dda52dffff9fe31b8
+Content-Type: application/json
+
+{
+    "content": "Who is this",
+    "userId": "6429311f95b9c156e1e2d8df"
+}

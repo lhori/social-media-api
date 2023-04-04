@@ -1,0 +1,27 @@
+GET http://localhost:3000/user
+
+###
+
+GET http://localhost:3000/user/6429311f95b9c156e1e2d8df
+
+###
+
+POST http://localhost:3000/user/create
+Content-Type: application/json
+
+{
+    "username": "User 3"
+}
+
+###
+
+DELETE http://localhost:3000/user/642930e995b9c156e1e2d8d8
+
+###
+
+PATCH http://localhost:3000/user/642930e995b9c156e1e2d8d8
+Content-Type: application/json
+
+{
+    "username": "Who is this"
+}

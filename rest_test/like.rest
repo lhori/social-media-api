@@ -1,0 +1,24 @@
+GET http://localhost:3000/like
+
+###
+
+GET http://localhost:3000/like/6429474acf8d2af34fac1ff4/likes
+
+###
+
+POST http://localhost:3000/like/6429474acf8d2af34fac1ff4
+Content-Type: application/json
+
+{
+    "userId": "6429311f95b9c156e1e2d8df"
+}
+
+###
+
+DELETE http://localhost:3000/like/6429474acf8d2af34fac1ff4
+Content-Type: application/json
+
+{
+    "userId": "6429311f95b9c156e1e2d8df"
+}
+
